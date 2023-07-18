@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/devcontainers/base:jammy
+FROM jupyter/pyspark-notebook:latest
 # FROM mcr.microsoft.com/devcontainers/base:jammy 
 
 ARG DEBIAN_FRONTEND=noninteractive
@@ -28,7 +28,7 @@ RUN DEBIAN_FRONTEND=noninteractive \
 # Python and poetry installation
 USER $USER
 ARG HOME="/home/$USER"
-ARG PYTHON_VERSION=3.10
+ARG PYTHON_VERSION=3.11
 # ARG PYTHON_VERSION=3.10
 
 ENV PYENV_ROOT="${HOME}/.pyenv"
