@@ -1,3 +1,6 @@
+'''
+Module to define transformations on dataframes
+'''
 import pyspark.sql.functions as F
 
 
